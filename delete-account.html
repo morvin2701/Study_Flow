@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account - StudyFlow</title>
+    <meta name="description" content="Request account deletion for StudyFlow app.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <nav>
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            StudyFlow
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#features">Features</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="delete-account.html" class="active">Delete Account</a>
+        </div>
+        <a href="index.html#download" class="nav-cta">Get the App</a>
+    </nav>
+
+    <div class="page-container">
+        <div class="glass-panel" style="opacity: 1; transform: translateY(0);">
+            <h1 class="page-title">Delete Account</h1>
+            
+            <div class="split-layout">
+                <div class="split-info">
+                    <div class="content-block">
+                        <h2>Account Deletion Request</h2>
+                        <p>Please read carefully before proceeding. Deleting your StudyFlow account is a permanent action and will result in the loss of all your data.</p>
+                        
+                        <div class="warning-box">
+                            <div class="warning-icon">
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                            </div>
+                            <div class="warning-text">
+                                <h4>Irreversible Action</h4>
+                                <p>This action cannot be undone. Once your account is deleted, your data cannot be recovered.</p>
+                            </div>
+                        </div>
+
+                        <p><strong>What will be deleted?</strong></p>
+                        <ul class="danger-list">
+                            <li><i class="fa-solid fa-xmark"></i> All your tracked study hours and logs</li>
+                            <li><i class="fa-solid fa-xmark"></i> Upcoming exam schedules and deadlines</li>
+                            <li><i class="fa-solid fa-xmark"></i> Work task lists and categorizations</li>
+                            <li><i class="fa-solid fa-xmark"></i> Analytics, charts, and progress history</li>
+                            <li><i class="fa-solid fa-xmark"></i> Your customized focus settings and preferences</li>
+                        </ul>
+
+                        <p>If you have an active premium subscription, please ensure you cancel it through your respective app store (Apple App Store or Google Play Store) before deleting your account to avoid future charges.</p>
+                    </div>
+                </div>
+
+                <div class="split-form">
+                    <div class="content-block">
+                        <h2>Submit Request</h2>
+                        <p>If you're absolutely sure you want to proceed, please confirm your identity by filling out the form below.</p>
+                    </div>
+                    
+                    <form class="delete-form" id="deleteForm">
+                        <div class="form-group">
+                            <label for="email">Account Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter the email associated with your account">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reason">Reason for Deletion (Optional)</label>
+                            <textarea id="reason" name="reason" placeholder="Let us know how we can improve..."></textarea>
+                        </div>
+
+                        <div class="form-group" style="flex-direction: row; align-items: flex-start; gap: 0.75rem; margin-top: 0.5rem; margin-bottom: 1rem;">
+                            <input type="checkbox" id="confirm" required style="margin-top: 0.25rem;">
+                            <label for="confirm" style="font-weight: normal; font-size: 0.9rem;">I understand that account deletion is permanent and my data cannot be recovered.</label>
+                        </div>
+
+                        <button type="submit" class="btn-danger">
+                            <i class="fa-solid fa-trash-can"></i> Request Deletion
+                        </button>
+                    </form>
+
+                    <div id="successMessage" style="display: none;" class="success-box">
+                        <div class="success-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div class="success-text">
+                            <h4>Request Received</h4>
+                            <p>Your account deletion request has been submitted successfully. Our team will process this and contact you shortly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    StudyFlow
+                </a>
+                <p>Your premium study tracking companion.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Legal</h4>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="delete-account.html">Delete Account</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 StudyFlow Inc. All rights reserved.
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
